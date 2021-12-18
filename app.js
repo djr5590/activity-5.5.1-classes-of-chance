@@ -5,8 +5,8 @@ class Casino {
         // this.isFakeCoin = isFakeCoin;
     }
 
-    playGame(betAmount) {
-        if (Math.random() > 0.5 || this.isFakeCoin){
+    playGame(betAmount, FakeCoin) {
+        if (Math.random() > 0.5 || FakeCoin){
             console.log(this.name + "wins!");
             this.timesPlayed++;
         } else {
